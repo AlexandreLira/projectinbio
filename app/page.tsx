@@ -1,14 +1,16 @@
 import Image from "next/image";
 import { Hero } from "./components/landing/hero";
+import { Header } from "./components/landing/header";
+import { VideoExplanation } from "./components/landing/video-explanation";
+import { Pricing } from "./components/landing/pricing";
 
 export default function Home() {
   return (
     <div className="max-w-7xl mx-auto">
-      <h1 className="text-content-heading text-4xl font-bold">Hello World</h1>
-      {/* <Header /> */}
+      <Header />
       <Hero />
-      {/* <VideoExplanation /> */}
-      {/* <Pricing /> */}
+      <VideoExplanation />
+      <Pricing />
       {/* <FAQ /> */}
     </div>
   );
